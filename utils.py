@@ -75,7 +75,7 @@ def show_images(images, scale=5, savepath=None, dims = None):
     plt.figure(figsize=(scale*n, scale*m))
 
     for i in range(len(images)):
-        plt.subplot(int(m), n, i+1)
+        plt.subplot(int(m), int(n), int(i+1))
         plt.imshow(images[i])
         plt.axis('off')
 
