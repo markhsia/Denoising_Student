@@ -67,7 +67,7 @@ def show_images(images, scale=5, savepath=None, dims = None):
             images[i] = float_to_image(images[i])
     
     if dims is None:
-        m = len(images)//10 + 1
+        m = int(len(images)//10 + 1)
         n = 10
     else:
         m, n = dims
